@@ -1,0 +1,36 @@
+.Cart66PriceLabel, .Cart66Price, .Cart66UserQuantity label, .Cart66UserPrice label, th, tbody {
+  font-family: "NovecentowideBookBold", Helvetica, Arial, sans-serif;
+  color: #181818;
+  font-size: 14px!important;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 0;
+  font-weight: normal!important; 
+}
+
+.Cart66Price {
+  color: #c93948; }
+
+.Cart66UserQuantity label, .Cart66UserPrice label {
+  color: #565656; }
+
+.Cart66PriceLabel {
+  color: #181818; 
+}
+
+.Cart66ButtonPrimary, .Cart66ButtonSecondary, #content .Cart66ButtonPrimary, #content .Cart66ButtonSecondary, .Cart66CartButton .purAddToCart {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b82b36), color-stop(1, #a3242d)) !important;
+  background: -moz-linear-gradient(center top, #b82b36 5%, #a3242d 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b82b36', endColorstr='#a3242d') !important;
+  background-color: #b82b36!important;
+  border: 1px solid #760f18 !important;
+  color: #fff!important;
+  font-family: "NovecentowideBookBold", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px; 
+}
+
+.Cart66CartButton {
+  font-family: "NovecentowideLightRegular", Helvetica, Arial, sans-serif;
+  color: #565656; 
+}

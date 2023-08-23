@@ -1,0 +1,15 @@
+.et_pb_image_overlay {
+    position: relative;
+}
+.et_pb_image_overlay img.overlay {
+    display: block;
+    position:absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.4s ease 0s;
+}
+.aw-show-overlay {
+    opacity:1 !important;
+}

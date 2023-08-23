@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweed Barbers</title>
+    <link rel="icon" href="./assets/R.png" type="image/x-icon" >
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@100;300;400;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
+      
+  <script src="https://kit.fontawesome.com/9834b1030e.js" crossorigin="anonymous"></script>
+      
+    <style>
+       * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .logo img{
+        width: 180px;
+        height: 170px;
+        margin-top: 120px;
+        z-index: 2;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #181818;
+        height: 130px;
+        background-image: url(./assets/backheader.png);
+        background-size: 100% 130px;
+        z-index: 2;
+        opacity: 0.97;
+    }
+
+    .topheader{
+      width: 100%;
+      height: 35px;
+      border: rgba(24,24,24,0.89);
+      background-color:rgba(24,24,24,0.89);
+      z-index: 3;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 800;
+      font-size: 14.5px;
+
+    }
+
+    .topheader ul li{
+      color: white;
+      
+    }
+
+    .topheader div button {border: #c93948;
+    background-color: #c93948; color: white; padding: 2px 3px; font-weight: bold; margin-left: 390px; border-radius: 1px;  transition: 0.3s ease-in-out !important;}
+
+    .topheader div button a{color: white; padding: 1px; text-decoration: none; text-transform: uppercase; font-family: 'Noto Sans', sans-serif; font-weight: 800;}
+
+    .topheader div button:hover{
+
+      color: #afafaf;
+      background-color: #77262e;
+      transition: 0.301s ease-in-out;
+    }
+
+    .bottomheader{
+      top: 0;
+      position: sticky;
+    }
+
+    header ul li {
+         display: inline-block;
+         font-family: 'Noto Sans', sans-serif;
+         font-weight: 700;
+    }
+
+    header li a {
+        color: #ffffff;
+        margin: 0 7px;
+        text-decoration: none;
+        transition: 0.3s ease-in-out !important;
+    }
+
+    li a:hover{color:rgb(187, 176, 176) ; transition: 0.3s ease-in-out;}
+
+     .navbar2{
+      margin-right: 345px;
+      margin-top: 55px;
+     }
+
+     .navbar{
+      margin-left: 345px;
+      margin-top: 55px;
+     }
+
+     .firstbackground img{
+      width: 100%;
+      margin-top: 0px;
+     }
+
+     .secondbackground{
+      width: 100%;
+      margin-top: 0px;
+      display: none;
+     }
+ 
+
+
+    .services .cards {
+      display: flex;
+      flex-direction: column;
+      margin: 3.5px auto;
+    }
+    .services .box-service {
+    
+      position: relative;
+      margin: 20px auto;
+     
+      margin-bottom: 20px;
+    }
+
+    .cards div{transition: 0.3s ease-in-out;}
+
+    .services .box-service-img {
+      width: 310px;
+      height: 170px;
+      background-repeat: no-repeat !important;
+      background-size: contain !important;
+    }
+
+    .services .box-service-img-1:hover {
+      background-image: url('./assets/div1hover.png') !important;
+      transition: 0.3s ease-in-out;
+    }
+
+    .services .box-service-img-2:hover {
+      background-image: url('./assets/div2hover.png') !important;
+      transition: 0.3s ease-in-out;
+    }
+
+    .services .box-service-img-3:hover {
+      background-image: url('./assets/div3hover.png') !important;
+      transition: 0.3s ease-in-out;
+    }
+
+    @media(max-width: 991px) {
+    	.centerize { text-align: center;  }
+    	.learnmore-center{ align-content: center;
+      align-items: center;
+      display: flex; }
+    }
+    
+    @media(min-width:992px) and (max-width: 1199px) {
+      .services .cards {
+        display: flex;
+        flex-direction: row;
+      }
+      .services .box-service {
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        margin-bottom: 20px;
+        width: 33.333%;
+      }
+      .services .box-service-img {
+        width: 100% !important;
+        height: 300px;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+        position: relative;
+      }
+
+    }
+
+    @media(min-width: 1200px) {
+      .services .cards {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+     .hover-img{
+      margin-top: 26px !important;
+     }
+
+
+    @media(max-width: 480px) {
+      .container {
+        width: 480px;
+        margin: 0 auto;
+      }
+    }
+
+    @media(max-width: 565px) {
+      .container {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    @media(min-width: 576px) {
+      .container {
+        width: 540px;
+        margin: 0 auto;
+      }
+    }
+
+    @media(min-width: 768px) {
+      .container {
+        width: 853px;
+        margin: 0 auto;
+      }
+    }
+
+    @media(min-width: 1200px) {
+      .container {
+        width: 1140px;
+        margin: 0 auto;
+      }
+    }
+    @media(min-width: 1400px) {
+      .container {
+        width: 1320px;
+        margin: 0 auto;
+      }
+    }
+
+
+
+
+
+    @media(min-width:992px) and (max-width: 1199px) {
+      .section .main {
+        display: flex;
+        flex-direction: row;
+      }
+      .section .main div {
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        margin-bottom: 20px;
+        width: 33.333%;
+      }
+      .section .main div{
+        width: 100% !important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+        position: relative;
+      }
+
+
+    }
+
+    @media(min-width: 1200px) {
+      .section .main {
+        display: flex;
+        flex-direction: row;
+        margin-top: 55px;
+      }
+    }   
+
+
+    @media(max-width: 480px) {
+      .section {
+        width: 480px;
+        margin: 0px auto;
+      }
+
+      .divparagrafi{max-width: 440px !important; width: 100% !important; margin: 0px auto !important;}
+      .main div p{max-width: 400px !important; width: 100% !important; margin: 0px auto !important;}
+      .main div img{max-width: 420px !important; width: 100% !important; margin: 0px auto !important;}
+      .main div{margin: 0px auto !important;}
+    }
+
+    @media(max-width: 565px) {
+      .section {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .divparagrafi{margin: 0px auto !important;}
+      .main div p{max-width: 370px !important; width: 100% !important; margin: 0px auto !important;}
+    }
+
+    @media(min-width: 576px) {
+      .section {
+        width: 540px;
+        margin: 0 auto;
+      }
+
+      .divparagrafi{margin: 0px auto !important;}
+    }
+
+    @media(min-width: 768px) {
+      .section {
+        width: 853px;
+        margin: 0 auto;
+      }
+
+      .divparagrafi{margin: 0px auto !important;}
+      .main div p{max-width: 440px !important; width: 100% !important; margin: 0px auto !important;}
+    }
+
+    @media(min-width: 1200px) {
+      .section {
+        width: 1140px;
+        margin: 0 auto;
+      }
+
+      .main div p{ max-width: 550px !important; width: 100% !important; margin: 0px auto !important;}
+    }
+    @media(min-width: 1400px) {
+      .section {
+        width: 1320px;
+        margin: 0 auto;
+      }
+
+      .divparagrafi{margin: 0px auto !important;}
+    }
+
+
+     .main div img{ 
+      width: 442px; 
+      height: 558px;
+      margin-left: 198px;
+    }
+
+     .main div h2{
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 40px;
+      color: #333;
+      opacity: 0.92;
+     }
+
+     .main div h2 span{
+      display: block;
+     }
+
+     .main div h3{
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      font-size: 34px;
+      color: #333;
+      opacity: 1;
+      margin-bottom: 20px;
+      margin-top: 60px;
+     }
+
+     .main div p{
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      color: #333;
+      opacity: 0.88;
+      line-height: 30px;
+      width: 520px;
+     }
+
+     .main div button{
+      border: #c93948;
+      border-radius: 5px;
+      padding: 8px;
+      background-color: #c93948;
+      margin-top: 20px;
+      transition: 0.3s ease-in-out !important;
+      margin: 20px auto !important;
+     }
+
+     .main div button a{
+      text-decoration: none;
+      color: white;
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+     }
+
+     .main div button:hover{
+      background-color: #9a323d;
+      color: #a8a5a5;
+      transition: 0.3s ease-in-out;
+     }
+
+
+
+     @media(min-width:992px) and (max-width: 1199px) {
+      
+      .logot div {
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        margin-bottom: 20px;
+        width: 33.333%px;
+      }
+      .logot div img {
+        width: 100% !important;
+        height: 300px;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+        position: relative;
+      }
+
+    }
+
+      .logotepergjithshme .logot {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin: 20px 0;
+     }
+
+
+     @media(min-width:992px) and (max-width: 1199px) {
+      .section3 .quotekomplet .quote {
+        display: flex;
+        flex-direction: row;
+      }
+      .section3 .quotekomplet .quote div {
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        margin-bottom: 20px;
+        width: 33.333%;
+      }
+      .services .quotekomplet .quote div img, .p , .h3{
+        width: 100% !important;
+        height: 300px;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+        position: relative;
+      }
+      
+       .logotepergjithshme .logot {
+       
+       flex-direction: row !important;
+     }
+
+    }
+
+    @media(min-width: 1200px) {
+      .section3 .quotekomplet .quote {
+        display: flex;
+        flex-direction: row;
+        width: 1080px !important;
+      }
+    }
+
+
+    @media(max-width: 480px) {
+      .quotekomplet {
+        width: 480px;
+        margin: 0 auto;
+      }
+
+      .quotekomplet{display: none !important;}
+    }
+
+    @media(max-width: 770px){
+      .quotekomplet{display: none !important;}
+    }
+
+    @media(max-width: 565px) {
+      .quotekomplet {
+        width: 100%;
+        margin: 0 auto;
+        display: none !important;
+      }
+    }
+
+    @media(min-width: 576px) {
+      .quotekomplet {
+        width: 540px;
+        margin: 0 auto;
+      }
+    }
+
+    @media(min-width: 768px) {
+      .quotekomplet {
+        width: 853px;
+        margin: 0 auto;
+      }
+    }
+
+    @media(min-width: 1200px) {
+      .quotekomplet {
+        width: 1140px;
+        margin: 0 auto;
+      }
+    }
+    @media(min-width: 1400px) {
+      .quotekomplet {
+        width: 1320px;
+        margin: 0 auto;
+      }
+    }
+
+
+    @media(min-width: 992px) {
+    	.logotepergjithshme .logot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+
+     .quote{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quote .p .pp{
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      color:#333;
+      opacity: 0.86;
+      margin-left: -170px;
+      
+    }
+
+    .quote {
+      border: #d6d3d3 0.6px;
+      max-width: 1080px;
+      width: 100%;
+      height: 230px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 210px;
+      margin-top: 55px;
+      background-color: #f1f1f1;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .imgg{
+      width: 700px;
+    }
+
+    .imgg img{
+      border-radius: 50%;
+      width: 90px;
+      height: 90px;
+      margin-left:20px;
+      margin-bottom: 97px;
+    }
+
+    .h3 h3{
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      opacity: 0.88;
+      color: #333;
+      margin-left: -160px;
+    }
+
+    .h3 p{
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      color: #333;
+      opacity: 0.80;
+      margin-left: -160px;
+    }
+
+
+
+
+    
+    @media(min-width:992px) and (max-width: 1199px) {
+      .mainfooter .footer {
+        display: flex;
+        flex-direction: row;
+      }
+      .mainfooter .footer div {
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        margin-bottom: 20px;
+        width: 33.333%;
+      }
+      .mainfooter .footer div{
+        width: 100% !important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+        position: relative;
+      }
+
+
+    }
+
+    @media(min-width: 1200px) {
+      .mainfooter .footer {
+        display: flex;
+        flex-direction: row;
+        margin-top: 55px;
+      }
+    }   
+
+
+    @media(max-width: 480px) {
+      .mainfooter {
+        width: 480px !important;
+        margin: 0px auto;
+        display: flex !important;
+        flex-direction: column !important;
+      }
+    }
+
+    @media(max-width: 565px) {
+      .mainfooter {
+        width: 100% !important;
+        margin: 0 auto !important;
+      }
+    }
+
+    @media(min-width: 576px) {
+      .mainfooter {
+        width: 576px !important;
+        margin: 0 auto !important;
+      }
+
+    }
+
+    @media(min-width: 768px) {
+      .mainfooter {
+        width: 853px;
+        margin: 0 auto;
+      }
+    }
+
+    @media(min-width: 1200px) {
+      .mainfooter {
+        width: 1200px;
+        margin: 0 auto;
+      }
+    }
+    @media(min-width: 1400px) {
+      .mainfooter {
+        width: 1400px;
+        margin: 0 auto;
+      }
+
+    }
+
+    .footer{
+      width: 100%;
+      height: 330px;
+      background-image: url(./assets/footer-bg.jpg);
+      margin-top: 31px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .footer .reni1{
+      color: white;
+      margin-top: 4.86px;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+    }
+
+
+    .footer div h2{
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 21px;
+    }
+
+    .reni2{
+      color: rgb(255, 255, 255);
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      /* margin: 70px auto; */
+    }
+
+    .bottomfooter{
+      background-color: rgba(0, 0, 0, 0.89);
+      height: 68px;
+      text-decoration: none;
+    }
+
+    .copyright li{
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 18px;
+      color: white;
+      margin-left: 170px;
+    }
+
+
+    @media screen and (max-width: 750px ){
+  
+
+    .topheader{ height: 40px;}
+
+    .topheader div button{
+      display: none;
+    }
+
+    .logo img{
+      width: 95px;
+      height: 90px;
+      margin-top: 10px;
+    }
+
+    .topheader ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0px auto;
+    }
+
+    .bottomheader{
+      height: 90px;
+      opacity: 0.97;
+    }
+
+    header{opacity: 1;}
+
+    header li a{
+      display: none;
+    }
+
+    .firstbackground{ display: none; }
+    .secondbackground {display: block;}
+    .secondbackground img {
+      width: 100%;
+    }
+    
+    .box-service-img{
+      
+    }
+
+    .section{}
+
+    .main div img{
+      margin-left: 50px !important;
+    }
+  
+  
+  }
+
+    </style>
+</head>
+<body>
+  
+  <header class="topheader" style="background-image: none;">
+    <ul>
+      <li><i class="fa-solid fa-phone"></i>(044)-860-609</li>
+      <li><i class="fa-solid fa-envelope"></i>rrezonmisku11@gmail.com</li>
+      <li><a href="https://www.facebook.com/rrezon.misku.1"><i class="fa-brands fa-facebook-f"></i></a></li>
+      <li><a href="https://twitter.com/rrezon_misku"><i class="fa-brands fa-twitter"></i></a></li>
+    </ul>
+    <div><button><a href="#">BOOK APPOINTMENT</a></button></div>
+  </header>
+    <header class="bottomheader">
+        <!-- Navbar -->
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICES</a></li>
+          </ul>
+        </nav>
+        <div class="logo">
+          <img src="./assets/logo.png" alt="logoja "
+          />
+        </div>
+        <nav class="navbar2">
+          <ul>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+    </header>
+    <div class="firstbackground">
+      <img src="./assets/tweed-home9.jpeg" alt="Background">
+    </div>
+
+    <div class="secondbackground">
+      <img src="./assets/mobilebackground.png" alt="">
+    </div>
+
+    <section class="services">
+      <div class="container">
+        <div class="cards" >
+
+          <div id="div1" class="box-service"><div class="box-service-img box-service-img-1" style="background: url('./assets/div1.png')"></div></div> 
+          
+          <div id="div2" class="box-service"><div class="box-service-img box-service-img-2" style="background: url('./assets/div2.png')"></div></div> 
+          
+          <div id="div3" class="box-service"><div class="box-service-img box-service-img-3" style="background: url('./assets/div3.png')"></div></div> 
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="main">
+          <div>
+            <img src="./assets/barber-chair.png" alt="" class="imgg">
+          </div>
+          <div class="divparagrafi">
+            <h2 class="centerize" style="margin-left: 5px;">WE RESPECT THE <span>HERITAGE OF CLASSIC</span> BARBERING.</h2>
+            <h3 class="centerize">Haircuts in Boston</h3>
+            <p style="margin: 0px auto !important;">Tweed Barbers of Boston has provided award-winning men’s haircuts and hot lather shaves to discerning Boston-area clients since 2006. We take tremendous pride in our work and perpetuating the fine art of classic barbering. Our strength and differentiation is manifest in the details: how intently we listen to what you want, how well the hair is tapered, how straight the neckline is, how even the sideburns are. You can’t find a finer men’s haircut in Boston. We would love the opportunity to be your Boston barber of choice.
+            </p>
+            <button class="centerize learnmore-center"><a href="#">Learn More</a></button>
+          </div>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="container">
+	      <div class="logotepergjithshme">
+		<div class="logot">
+		  <div><img src="./assets/BN.jpg" alt=""></div>
+		  <div><img src="./assets/BON.png" alt=""></div>
+		  <div><img src="./assets/BONS.jpg" alt=""></div>
+		</div>
+	      </div>
+      </div>
+    </section>
+
+    <section class="section3">
+      <div class="quotekomplet">
+        <div class="quote" style="margin: 40px auto;">
+          <div class="imgg"><img src="./assets/quotelogo.jpg" alt=""></div>
+          <div class="p"><p class="pp"><i>The vintage photos and oak flooring spell tradition – and so do the master barbers with decades of experience. The superb cuts, hot-lather shaves and other services – combined with the welcoming vibe make this shop one of our favorites.</i></p>
+          <br><br><br>
+          <div class="h3">
+          <h3>Details Magazine</h3>
+          <p>The 16 Best Barbershops in America</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mainfooter" style="width: 100% !important;">
+      <div class="footer">
+        <div><img src="./assets/footer.png" alt=""></div>
+        <div class="reni1">1313 Washington St <br>
+        Boston, MA 02118 <br>
+        rrezonmisku11@gmail.com <br>
+        (044)-860-609 <br><br>
+        Mon-Thurs 10AM-9PM <br>
+        Fri 10AM-7PM <br>
+        Sat 8AM-6PM <br>
+        Sun 9AM-5PM <br>
+        </div>
+    </footer>
+
+    <footer class="bottomfooter">
+      <ul class="copyright" style="text-decoration: none !important;">
+        <li style="text-decoration: none !important;">Copyright © 2018 Tweed Barbers</li>
+      </ul>
+    </footer>
+
+</body>
+</html>
